@@ -1,3 +1,81 @@
+@font-face {
+    font-family: 'inter-variable';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'inter-variable';
+    height: 97vh;
+}
+
+
+main {
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min-content;
+    align-items: center;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: x-large;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.location {
+    font-weight: 700;
+    font-size: small;
+    color: yellowgreen;
+}
+
+.description {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: smaller;
+    font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials>span {
+    background-color: rgb(80, 80, 80);
+    border-radius: 10px;
+    margin: 7px 0px;
+    width: 290px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.socials>span:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+}
+
+.avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -5,4 +83,15 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 425px) {
+    main {
+        padding: 15px 25px;
+    }
+
+    .socials>span {
+        width: 250px;
+    }
 }
